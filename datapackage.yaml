@@ -1,0 +1,110 @@
+name: indicadores_seplag
+title: Indicadores SEPLAG
+profile: data-package
+resources:
+  - dialect:
+      delimiter: ;
+    encoding: utf-8-sig
+    format: csv
+    hashing: md5
+    name: indicadores_planejamento
+    path: data/indicadores_planejamento.csv
+    profile: tabular-data-resource
+    schema:
+      fields:
+        - name: codigo_programa
+          type: integer
+          constraints:
+            maximum: 760
+        - name: nome_programa
+          type: string
+        - name: exclusao_logica_programa
+          type: boolean
+        - name: indicador
+          type: string
+        - name: exclusao_logica_indicador
+          type: boolean
+        - name: unidade_de_medida
+          type: string
+          constraints:
+            enum:
+              - '%'
+              - '1/1.000'
+              - 'ATENDIMENTO'
+              - 'Atividade'
+              - 'BEM/ACERVO PRESERVADO'
+              - 'Consulta realizada'
+              - 'Defensores por 100 mil habitantes'
+              - 'Dias'
+              - 'estação - 1.000 km2'
+              - 'Hora'
+              - 'índice'
+              - 'JOVEM'
+              - 'km'
+              - 'Média'
+              - 'Mês'
+              - 'Minutos'
+              - 'Módulo de sistema informatizado implementado'
+              - 'Município Beneficiado'
+              - 'Nota'
+              - 'Número'
+              - 'número absoluto'
+              - 'Número de homicídios/ 100 mil habitantes'
+              - 'Número Índice'
+              - 'PERCENTAGEM'
+              - 'Percentagem %'
+              - 'Percentual'
+              - 'Percentual %'
+              - 'Pessoa'
+              - 'PESSOA INSCRITA/MATRICULADA'
+              - 'pessoas atendidas/mês'
+              - 'Porcentagem'
+              - 'prestação jurídica por 100 mil habitantes'
+              - 'Produção por Doutor'
+              - 'Projeto Aprovado'
+              - 'R$'
+              - 'TAXA DE OCUPAÇÃO'
+              - 'turista'
+              - 'UNIDADE'
+              - 'visitante'
+        - name: indice_de_referencia
+          type: string
+        - name: em_apuracao_indice_de_referencia
+          type: any
+        - name: data_de_apuracao
+          type: date
+        - name: previsao_para_2021
+          type: string
+        - name: em_apuracao_2021
+          type: any
+        - name: previsao_para_2022
+          type: string
+        - name: em_apuracao_2022
+          type: any
+        - name: previsao_para_2023
+          type: string
+        - name: em_apuracao_2023
+          type: any
+        - name: previsao_para_2024
+          type: string
+        - name: em_apuracao_2024
+          type: any
+        - name: fonte
+          type: string
+        - name: periodicidade
+          type: string
+        - name: base_geografica
+          type: string
+        - name: formula_de_calculo
+          type: string
+        - name: justificativa_status_em_apuracao_das_previsaoes_dos_indices
+          type: any
+        - name: justificativa_status_em_apuracao_indice_de_referencia
+          type: any
+        - name: data_alteracao
+          type: datetime
+        - name: indicador_novo
+          type: boolean
+        - name: polaridade
+          type: string
+    scheme: file
