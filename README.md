@@ -1,0 +1,1 @@
+[![Frictionless](https://github.com/gabrielbdornas/indicadores-seplag/actions/workflows/frictionless.yaml/badge.svg)](https://repository.frictionlessdata.io/report?user=gabrielbdornas&repo=indicadores-seplag&flow=frictionless)
