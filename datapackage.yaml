@@ -1,6 +1,7 @@
 name: indicadores_seplag
 title: Indicadores SEPLAG
 profile: data-package
+owner_org: secretaria-de-estado-de-planejamento-e-gestao-seplag
 resources:
   - dialect:
       delimiter: ;
